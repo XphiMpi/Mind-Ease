@@ -1,0 +1,65 @@
+/* src/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", "Nunito", sans-serif;
+    background-color: #ede8f5;
+    color: #2d264b;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5c4f2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9b7bdc;
+}
+
+/* Breathing animation helpers */
+@keyframes breathingPulse {
+  0% {
+    transform: scale(0.85);
+    box-shadow: 0 0 20px rgba(126, 87, 194, 0.2);
+  }
+  50% {
+    transform: scale(1.18);
+    box-shadow: 0 0 45px rgba(126, 87, 194, 0.45);
+  }
+  100% {
+    transform: scale(0.85);
+    box-shadow: 0 0 20px rgba(126, 87, 194, 0.2);
+  }
+}
+
+.breathing-glow {
+  transition: all 1s ease-in-out;
+}
+
+/* Ripple waves effect */
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: rippleEffect 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}

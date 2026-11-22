@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if true;
+      
+      match /mind_dumps/{dumpId} {
+        allow read, write: if true;
+      }
+      
+      match /reality_checks/{checkId} {
+        allow read, write: if true;
+      }
+      
+      match /mood_logs/{logId} {
+        allow read, write: if true;
+      }
+    }
+  }
+}
+

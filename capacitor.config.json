@@ -1,0 +1,14 @@
+{
+  "appId": "com.mindease.app",
+  "appName": "MindEase",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#F4EFFC"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Subtle drop shadow -->
+    <path
+        android:pathData="M54,26 C43.2,40.8 33.6,54 33.6,64.8 C33.6,76.07 42.73,85.2 54,85.2 C65.27,85.2 74.4,76.07 74.4,64.8 C74.4,54 64.8,40.8 54,26 Z"
+        android:fillColor="#2250377E" />
+    <!-- Purple Water Droplet Body -->
+    <path
+        android:pathData="M54,24 C43.2,38.8 33.6,52 33.6,62.8 C33.6,74.07 42.73,83.2 54,83.2 C65.27,83.2 74.4,74.07 74.4,62.8 C74.4,52 64.8,38.8 54,24 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="28"
+                android:endX="68"
+                android:endY="80"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#9B7BDC" />
+                <item android:offset="1.0" android:color="#6A4EA7" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Inner Calm Light Reflection Shine -->
+    <path
+        android:pathData="M44,60 C44,52 48,46 52,40"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.85" />
+    <path
+        android:pathData="M42,66 C42,64.5 43,63.5 44,62.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.65" />
+</vector>
